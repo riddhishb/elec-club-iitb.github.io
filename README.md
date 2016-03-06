@@ -1,43 +1,40 @@
-## 5 steps to get started blogging on GitHub with [Prose.io](http://prose.io/)
+# Website of Electronics Club, IIT Bombay
 
-### Step.1
-Fork this repository.
+## How to write a blog post
 
-### Step.2
-From **Admin** > **Options** > **Settings**, rename the repository to 
-`USERNAME.github.com` for your [GitHub pages](http://pages.github.com/).
+Blog posts live in the `_posts` folder. They have specific filename format:
 
-After ten minutes, you can find a sample page at `http://USERNAME.github.com`
-(like [this](http://tokkono.github.com/)).
+    yyyy-mm-dd-<title>.<ext>
 
-### Step.3
-Login to [Prose.io](http://prose.io/). 
-Make sure to authorize Prose to access your repositories.
+`<title>` should be lowercase of the words of your title seperated by a '`-`' ( hyphen ). 
 
-### Step.4
-Write your article. Access to the repository `USERNAME.github.com` 
-and go to `_post` directory, then `+ NEW FILE` to create new article.
- 
-Make sure to change `Metadata` as follows.
+`<ext>` should be the file-format extension. You can write the blog post in HTML ('html' extension) or Markdown ('md' extension). Markdown is a simple and intuitive markup language (preferrable over HTML). [Here's](https://daringfireball.net/projects/markdown/basics) a good tutorial for it. If you do use HTML, keep it to simple tags like `<h1>`, `<p>`, `<img>` and such.
 
-	layout: post
-	title: my first article
-	published: true
+For eg.
 
-### Step.5
-Publish your article. Save and Commit. Then you can see your article at 
-`http://USERNAME.github.com/`.
+    2016-03-07-first-post.md
 
-## References
-* [Blogging with Jekyll Tutorial | Jekyll-Bootstrap](http://jekyllbootstrap.com/)  
-	You can find an awesome tutorial about blogging with jekyll.
-* [Home - mojombo/jekyll Wiki](https://github.com/mojombo/jekyll/wiki)
-* [Home - Shopify/liquid Wiki](https://github.com/Shopify/liquid/wiki)
+Content of the file should include this Front Matter on top:
 
-## Want to customize ?
-Sure, first and foremost, you should edit `_config.yml` file.
-check the [wiki](https://github.com/tokkonopapa/jekyll-experiment/wiki) out !
+    ---
+    layout: post
+    comments: true
 
-## License
-Licensed under the [MIT License][mit].
-[MIT]: http://www.opensource.org/licenses/mit-license.php
+    title: First Post
+    excerpt: Small description for main page
+    category: [Electronics, Robotics]
+    tags: [Raspberry Pi, Arduino]
+    ---
+
+        ...
+        content
+        ...
+
+Change the `title`, `excerpt`, `category` and `tags` field appropriately. They will be used to generate title and description of your blog on the homepage, and will add it to corresponding category and tag-wise pages.
+
+There is no need to add title or date in the content, they will be added automatically.
+
+So just fork, add a post and send a PR, or just push it directly here if you have access!
+
+## Theme
+[Jekyll Experiment](https://github.com/tokkonopapa/jekyll-experiment)
