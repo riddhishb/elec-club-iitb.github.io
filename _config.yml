@@ -56,6 +56,8 @@ navbar_list:
   link: /about
 - name: Projects
   link: /projects/
+- name: Chat
+  link: /gitter/
 
 # Configuration for bootstrap and color theme
 # `bootstrap`:

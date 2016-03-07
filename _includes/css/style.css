@@ -281,3 +281,10 @@ li.social {
 #myCarousel img {
 	margin: 0 auto;
 }
+
+#gitterChat {
+    width: 100%;
+    height: auto;
+
+    border: 0;
+}

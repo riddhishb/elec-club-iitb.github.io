@@ -1,0 +1,19 @@
+---
+layout: default
+comments: false
+
+title: Chat
+group: Chat
+---
+<h2 style="display: inline-block">Gitter Chat</h2>
+<a href="https://gitter.im/elec-club-iitb/chat"><i>&nbsp;Go to gitter</i></a>
+<iframe src="https://gitter.im/elec-club-iitb/chat/~embed" id="gitterChat"></iframe>
+
+<script type="text/javascript">
+    window.addEventListener("resize", function() {
+        var chatHeight = window.innerHeight - document.getElementById("header").offsetHeight - document.getElementById("navbar").offsetHeight - 100;
+        document.getElementById("gitterChat").setAttribute("style", "height:"+chatHeight+"px;");
+    });
+    var chatHeight = window.innerHeight - document.getElementById("header").offsetHeight - document.getElementById("navbar").offsetHeight - 100;
+    document.getElementById("gitterChat").setAttribute("style", "height:"+chatHeight+"px;");
+</script>
