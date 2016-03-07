@@ -22,6 +22,7 @@ Content of the file should include this Front Matter on top:
 
     title: First Post
     excerpt: Small description for main page
+    author: Your Name
     category: [Electronics, Robotics]
     tags: [Raspberry Pi, Arduino]
     ---
@@ -30,7 +31,7 @@ Content of the file should include this Front Matter on top:
         content
         ...
 
-Change the `title`, `excerpt`, `category` and `tags` field appropriately. They will be used to generate title and description of your blog on the homepage, and will add it to corresponding category and tag-wise pages.
+Change the `title`, `excerpt`, `author`, `category` and `tags` field appropriately. They will be used to generate title and description of your blog on the homepage, and will add it to corresponding category and tag-wise pages.
 
 There is no need to add title or date in the content, they will be added automatically.
 
