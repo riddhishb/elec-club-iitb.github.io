@@ -10,7 +10,7 @@ tags: [Raspberry Pi, OpenCV]
 ---
 
 
-![raspberry pi logo](../assets/img/rpi.jpeg)
+![raspberry pi logo](/assets/img/rpi.jpeg)
 
 Raspberry Pi is slowly finding a lot of applications related to image processing. I am going to provide a little overview of how one can get OpenCV up and running on your pi. I will be using tightVNC server for getting the display.
 
@@ -19,7 +19,7 @@ The first step is getting OpenCV installed on your pi, we will follow the exact 
 **<u>Step Zero</u>**
 
 Before we begin, I will tell you how my pi is connected so there is no confusion after moving further.  
-I have my pi connected to my wi-fi router with a LAN cable and have changed it to a _static IP configuration._ I am accessing it through my terminal using the ssh channel. In short what I have now and what you should have is a rpi with it's terminal. If you are totally new to rpi, I suggest you to take a look at these tutorials for setting up your pi [get you pi up and running](rpituts.html).
+I have my pi connected to my wi-fi router with a LAN cable and have changed it to a _static IP configuration._ I am accessing it through my terminal using the ssh channel. In short what I have now and what you should have is a rpi with it's terminal. If you are totally new to rpi, I suggest you to take a look at these tutorials for setting up your pi [get you pi up and running](http://riddhishb.github.io/blog/rpituts.html).
 
 **<u>Step One</u>**
 
