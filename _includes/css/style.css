@@ -257,6 +257,7 @@ li.social {
 #sidebar-archives     .mini-icon:before { content: "\f02d"; } /* icon-book */
 #sidebar-recent-posts .mini-icon:before { content: "\f016"; } /* icon-file */
 #sidebar-github       .mini-icon:before { content: "\f09b"; } /* icon-github */
+#sidebar-contact      .mini-icon:before { content: "\f098"; } /* icon-contact */
 #sidebar-tweets       .mini-icon:before { content: "\f099"; } /* icon-twitter */
 #meta-user.mini-icon:before             { content: "\f007"; } /* icon-user */
 #meta-category.mini-icon:before         { content: "\f07c"; } /* icon-folder-open */

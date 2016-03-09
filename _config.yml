@@ -74,6 +74,7 @@ responsive_bp: 768
 # CAUTION: `themes` should be false to put the script.html at the bottom.
 asides:
     about: true
+    contact: true
     search: false
     themes: false
     recent_posts: true
