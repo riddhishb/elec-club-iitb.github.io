@@ -80,7 +80,7 @@ asides:
     recent_posts: true
     archive_tabs: true
     tweets: false
-    github: true
+    github: false
 
 # Configuration for jQuery
 jquery_ver: 1.10.2
