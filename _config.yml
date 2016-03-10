@@ -74,12 +74,13 @@ responsive_bp: 768
 # CAUTION: `themes` should be false to put the script.html at the bottom.
 asides:
     about: true
+    contact: true
     search: false
     themes: false
     recent_posts: true
     archive_tabs: true
     tweets: false
-    github: true
+    github: false
 
 # Configuration for jQuery
 jquery_ver: 1.10.2
