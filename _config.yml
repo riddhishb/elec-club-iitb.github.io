@@ -8,7 +8,7 @@ lsi: true
 highlighter: rouge
 syntaxtheme: friendly
 markdown: kramdown
-exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md', 'vender']
+exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md', 'vendor']
 gems: ['jekyll-paginate']
 
 # Configuration for url/path
@@ -48,11 +48,11 @@ navbar_list:
   link: /
   dropdown: &dropdown
   - name: Archives
-    link: /blog/archives.html
+    link: /blog/archives
   - name: Categories
-    link: /blog/categories.html
+    link: /blog/categories
   - name: Tags
-    link: /blog/tags.html
+    link: /blog/tags
 - name: About
   link: /about
 - name: Projects
