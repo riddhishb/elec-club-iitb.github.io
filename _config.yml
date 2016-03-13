@@ -6,6 +6,7 @@ destination: ./_site
 plugins_dir: ./_plugins
 lsi: true
 highlighter: rouge
+syntaxtheme: friendly
 markdown: kramdown
 exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md', 'vender']
 gems: ['jekyll-paginate']
