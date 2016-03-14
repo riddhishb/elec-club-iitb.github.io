@@ -6,23 +6,22 @@ title: Glimpse Of The Naive Bayes' Classifier
 excerpt: A simple machine learning algorithm explained
 author: Riddhish Bhalodia
 category: [Machine Learning]
-tags: [ML,OpenCV]
+tags: [Machine Learning,OpenCV]
 
 assets_dir: /assets/glimpse-of-the-naive-bayes-classifier
 ---
 
-### <u>Glimpse Of The Naive Bayes' Classifier</u>
 
-![](../assets/img/joke.png)
+![joke]({{page.assets_dir}}/joke.png)
 
 The are numerous applications of machine learning out in the world and many more are being developed, I particularly like the clustering algorithms. In this post I would like to explore one of the most useful of supervised clustering algorithm, The Naive Bayes' Classifier.
 
 In the post I will be using an example project that I am working upon as the default example. So what does the algorithm do.  
 In simple words it computes the probabilities of the the test case to lie in one of "clusters" with a specific probablity. Let me go with the example to describe at what we are trying to achieve.
 
-<u>**Problem:**</u> Given an input paragraph we need to classify it as Argumentative, Narrative, Expository or Descriptive
+**<u>Problem:</u>** Given an input paragraph we need to classify it as Argumentative, Narrative, Expository or Descriptive
 
-<u>**Solution:**</u>
+**<u>Solution:</u>**
 
 *   <u>Training Set</u>  
     Collected the training data set of different paragraphs already classified already in the given four categories.
@@ -35,13 +34,13 @@ In simple words it computes the probabilities of the the test case to lie in one
 
 So let's first go through what the Bayesian approach of classification!
 
-![](/assets/img/bayes.png)
+![bayes]({{page.assets_dir}}/bayes.png)
 
 Now, you might be thinking yeah this makes sense we take the classes in our example as the types of pragraphs and the data being the input. But we cannot input an paragraph we input a set of featurs which makes d a vector. So the next thing we look at is how to deal with the multidimentional input, that is like in our case a number of features.
 
 There are many methods to approach this problem, but one of the most simple being is that **we assume that each feature have an independent distribution (or is Naive).** In our example the features we are likely to choose are something like, "number of certain puntuation per total words","number of stress adjectives per total words","average sentence length" etc. What we notice is that these all intutively are more or less not dependent on each other, there will be few dependencies obviously but nothing that we can't ignore :P. To summerize we have the probablities expressed as.
 
-![](/assets/img/bayes2.jpg)
+![bayes2]({{page.assets_dir}}/bayes2.jpg)
 
 This settles the defining of our model and this is what the Naive Bayes' Classifier is. Now we just need to predict the probability distribution of the features, this is usually chosen to be a gaussian model with some w=varying parameter, we need to tune the parameter using some kind of techniques like maximum liklihood estimation. For more insight on this topic I suggect you have a look at few youtube videos which are really amazing, one such short explanation is given [here](https://www.youtube.com/watch?v=8yvBqhm92xA).
 
